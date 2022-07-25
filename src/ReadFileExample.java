@@ -2,13 +2,13 @@ import java.io.*;
 import java.util.Scanner;
 
 public class ReadFileExample {
-    public void readFileText(String filePath) throws IOException {
+    public void readFileText(String filePath){
         try {
             //doc file theo duong dan
             File file = new File(filePath);
             // kiem tra neu file ko ton tai thi in ra ngoai le
             if (!file.exists()) {
-                throw new FileNotFoundException();
+               // throw new FileNotFoundException();
             }
             //doc tung dong cua file va tien hanh cong tong lai
             BufferedReader br = new BufferedReader(new FileReader(file));
